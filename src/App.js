@@ -1,7 +1,12 @@
 import "./assets/App.css";
+import NewTask from "./components/NewTask";
 
 function App() {
-  return <div className="App">Todolist App</div>;
+  return (
+    <div className="App">
+      <NewTask />
+    </div>
+  );
 }
 
 export default App;
