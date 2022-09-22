@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./assets/App.css";
 import NewTask from "./components/NewTask";
+import TaskCard from "./components/TaskCard";
 
 function App() {
   const [items, setitems] = useState([]);
@@ -20,6 +21,8 @@ function App() {
   return (
     <div className="App">
       <NewTask />
+      <h1>TODO LIST</h1>
+      <TaskCard />
     </div>
   );
 }
