@@ -20,9 +20,19 @@ function App() {
 
   return (
     <div className="App">
+      {/* To add new tasks */}
       <NewTask />
       <h1>TODO LIST</h1>
-      <TaskCard />
+
+      {/* iterates through the array and calls TaskCard and sends the required details as props */}
+      {items.map((item) => (
+        <TaskCard
+          key={item.id}
+          title={item.title}
+          completed={item.completed}
+          id={item.id}
+        />
+      ))}
     </div>
   );
 }

@@ -34,6 +34,7 @@ const NewTask = (props) => {
   };
 
   return (
+    // To add new task
     <div className="newTask">
       <div className="heading">
         <h1>Todolist App</h1>
